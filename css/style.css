@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+/*=== Font Family ===*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+/*=== Colors Definition ===*/
+
+:root{
+    --cor01: #2F3350;
+    --cor02: #1A1C2B;
+    --cor03: #01CF6D;
+    --cor04: #F2F2F2;
+    --shadow: rgba(0, 0, 0, 0.350);
+}
+
+/*=== Global Settings ===*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Kalam', cursive, Arial, sans-serif;
+}
+
+/*=== Settings Extras ===*/
+
+body, html{
+    width: 100%;
+    height: 100vh;
+}
+
+/*=== style body ===*/
+
+body{
+    background-color: var(--cor02);
+}
+
+/*=== style header ===*/
+
+header{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor03);
+    box-shadow: 3px 3px 10px var(--shadow);
+}
+
+header a{
+    text-decoration: none;
+    margin: 0px 10px;
+    font-size: 20px;
+    color: var(--cor01);
+}
+
+header a:hover{
+    transition: 0.4s;
+    color: var(--cor02);
+}
+
+/*=== style main ===*/
+
+main{
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*=== Style Index.ejs ===*/
+
+div.info{
+    color: var(--cor03);
+    text-align: center;
+}
+
+/*=== Style Login.ejs and Cadastro.ejs*/
+
+div.form-log, div.form-cad{
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px var(--shadow);
+    background-color: var(--cor03);
+    color: var(--cor02);
+}
+
+div.form-log > h1, div.form-cad > h1{
+    margin-top: 15px;
+    text-align: center;
+}
+
+div.form-log > form{
+    display: flex;
+    flex-direction: column;
+}
+
+div.form-log label, div.form-cad label{
+    margin-left: 30px;
+}
+
+div.form-log input, div.form-cad input{
+    width: 350px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0px 20px;
+    border: 0px;
+    outline: none;
+}
+
+div.form-log button, div.form-cad button{
+    width: 100px;
+    height: 30px;
+    margin: 50px auto;
+    border-radius: 10px;
+    border: 0px;
+    cursor: pointer;
+    background-color: var(--cor01);
+    color: var(--cor04);
+}
+
+div.form-log button:hover, div.form-cad button:hover{
+    transition: 0.4s;
+    background-color: var(--cor02);
+}
+
+/*=== styles of the message.ejs*/
+
+div.alert{
+    width: 320px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(255, 49, 32);
+}
+
+div.alert-success{
+    background-color: rgb(32, 168, 32);
+}
