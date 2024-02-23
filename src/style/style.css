@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+/*Import font*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/*Config colors*/
+:root{
+  --primary: #3498DB;
+  --secondary: #FFFFFF;
+  --tertiary: #BDC3C7;
+}
+
+/*Config fontSize*/
+:root{
+  --small: 1.7rem;
+  --superSmall: 1.5rem;
+  --medium: 2rem;
+  --large: 2.7rem;
+  --superLarge: 5rem;
+}
+
+/*Reset configs default*/
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*Set width and height - html, body*/
+html, body{
+  width: 100%;
+  height: 100vh;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Style div form*/
+.form{
+  width: 60%;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  position: relative;
+  background-color: var(--secondary);
+}
+
+/*Style div login and register*/
+.login,
+.register{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login h1,
+.register h1{
+  margin-bottom: 15px;
+  font-size: var(--large);
+  color: var(--primary);
+}
+
+/*Style div login*/
+.login input[type='email']{
+  width: 90%;
+  height: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--primary);
+  outline: none;
+}
+
+.login .password{
+  width: 90%;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid var(--primary);
+  display: flex;
+}
+
+.login .password input[type='password']{
+  width: 85%;
+  padding: 10px;
+  outline: none;
+  border: 0px;
+  background-color: transparent;
+}
+
+.login input[type='email']::placeholder,
+.password input[type='password']::placeholder{
+  color: var(--primary);
+}
+
+.password .icon-box{
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.password ion-icon{
+  transition: all 0.3s ease;
+  font-size: var(--large);
+  cursor: pointer;
+  color: var(--primary);
+}
+
+.password ion-icon:hover{
+  opacity: 0.8;
+}
+
+button{
+  width: 150px;
+  height: 25px;
+  margin-top: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--primary);
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--primary);
+}
+
+button:hover{
+  opacity: 0.8;
+}
+
+/*Style div register*/
+.box-input{
+  width: 100%;
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.box-input input[type='text']{
+  width: 45%;
+  height: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--primary);
+  outline: none;
+}
+
+.register input::placeholder{
+  color: var(--primary);
+}
+
+.register input[type='email']{
+  width: 95%;
+  height: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--primary);
+  outline: none;
+}
+
+.register .password{
+  width: 45%;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid var(--primary);
+  display: flex;
+}
+
+.register .password input[type='password']{
+  width: 80%;
+  padding: 10px;
+  outline: none;
+  border: 0px;
+  background-color: transparent;
+}
+
+/*Style toggle*/
+.div-toggle{
+  width: 50%;
+  height: 100%;
+  z-index: 2;
+  transition: all 0.5s ease;
+  position: absolute;
+  background-color: var(--primary);
+}
+
+.div-toggle h1{
+  margin: 10px 0px;
+  font-size: var(--large);
+  color: var(--secondary);
+}
+
+.div-toggle p{
+  font-size: var(--small);
+  color: var(--secondary);
+}
+
+.div-toggle button{
+  transition: all 0.3s ease;
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+}
+
+.div-toggle button:hover{
+  opacity: 1;
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.div-toggle .hidden{
+  display: none;
+}
+
+.left,
+.right{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-left{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.toggle-right{
+  margin-left: 50%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
