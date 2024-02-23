@@ -104,7 +104,7 @@ form{
   display: flex;
 }
 
-.login .password input[type='password']{
+.login .password .input-password-login{
   width: 85%;
   padding: 10px;
   outline: none;
@@ -113,7 +113,7 @@ form{
 }
 
 .login input[type='email']::placeholder,
-.password input[type='password']::placeholder{
+.password .input-password-login::placeholder{
   color: var(--primary);
 }
 
@@ -189,7 +189,8 @@ button:hover{
   display: flex;
 }
 
-.register .password input[type='password']{
+.register .password .input-password-register,
+.register .password .input-confirmPassword-register{
   width: 80%;
   padding: 10px;
   outline: none;
@@ -253,4 +254,8 @@ button:hover{
   margin-left: 50%;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+.icon-box .hidden{
+  display: none;
 }
