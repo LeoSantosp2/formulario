@@ -4,40 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./src/style/style.css">
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <title>Formulário</title>
 </head>
 <body>
+	<main>
+		<div class="form">
+			<div class="login">
+				<h1>Login</h1>
 
-    <header>
+				<form action="#">
+					<input type="email" placeholder="E-mail">
 
-        <div>
-    
-            <a href="./index.html">Formulário</a>
-    
-        </div>
-    
-        <div>
-    
-            <a href="./pages/cadastro.html">Cadastre-se</a>
-    
-            <a href="./pages/login.html">Entrar</a>
-    
-        </div>
-    
-    </header>
+					<div class="password">
+						<input type="password" placeholder="Senha">
+						
+						<div class="icon-box">
+							<ion-icon name="eye-outline" class="eye"></ion-icon>
+						</div>
+					</div>
 
-    <main>
+					<button>Login</button>
+				</form>
+			</div>
 
-        <div class="info">
+			<div class="register">
+				<h1>Cadastre-se</h1>
 
-            <h1>Formulário de Cadastro</h1>
+				<form action="#">
+					<div class="box-input">
+						<input type="text" placeholder="Nome">
+						<input type="text" placeholder="Sobrenome">
+					</div>
 
-            <p>Acesse o sistema ou cadastre-se caso não seja cadastrado.</p>
+					<input type="email" placeholder="E-mail">
 
-        </div>
+					<div class="box-input">
+						<div class="password">
+							<input type="password" placeholder="Senha">
 
-    </main>
+							<div class="icon-box">
+								<ion-icon name="eye-outline" class="eye"></ion-icon>
+							</div>
+						</div>
 
+						<div class="password">
+							<input type="password" placeholder="Confirmar Senha">
+
+							<div class="icon-box">
+								<ion-icon name="eye-outline" class="eye"></ion-icon>
+							</div>
+						</div>
+					</div>
+
+					<button>Cadastrar</button>
+				</form>
+			</div>
+
+			<div class="div-toggle toggle-left">
+				<div class="left">
+					<h1>Login</h1>
+
+					<p>Já tem cadastro? Efetue login!</p>
+
+					<button class="btn-login">Login</button>
+				</div>
+
+				<div class="right hidden">
+					<h1>Cadastrar-se</h1>
+
+					<p>Não tem cadastro? Efetue o cadastro!</p>
+
+					<button class="btn-register">Cadastrar-se</button>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="./src/js/script.js"></script>
 </body>
 </html>
